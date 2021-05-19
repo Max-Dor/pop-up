@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Три Медведя</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+     <button data-toggle="modal" class="button booking__button">Оставить заявку</button>
+    
+    <section class="advertizing">
+        <div class="container">
+            <div class="advertizing-wrapper">
+                <div class="advertizing__card">
+                    <img src="img/kotedj.jpg" alt="icon:kottedj" class="card__image">
+                    <h3 class="card__title">Комфортное размещение в коттеджах</h3>
+                    <a href="#" data-toggle="cottage" class="advertizing__link">Подробнее</a>
+                </div>
+                <div class="advertizing__card">
+                    <img src="img/banya.jpg" alt="icon:banya" class="card__image">
+                    <h3 class="card__title">Баня</h3>
+                    <a href="#" data-toggle="sauna"  class="advertizing__link">Подробнее</a>
+                </div>
+                <div class="advertizing__card">
+                    <img src="img/ostrova.jpg" alt="icon:ostrova" class="card__image">
+                    <h3 class="card__title">Выезд с палатками на острова</h3>
+                    <a href="#"  data-toggle="camp" class="advertizing__link">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <div class="modal">
+        <div class="modal__overlay">
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img src="img/close.svg" alt="close">
+            </a>
+            <h3 class="modal__title">Заполните форму</h3>
+            <form action="send.php" method="POST" class="modal__form">
+                <input type="text" class="input modal__input" placeholder="Введите имя*" name="name">
+                <input type="text" class="input modal__input" placeholder="Номер телефона*" name="phone">
+                <input type="text" class="input modal__input" placeholder="Email*" name="email">
+                <textarea  class=" message modal__message"  cols="30" rows="10" placeholder="Коментарий" name="message"></textarea>
+                <div class="modal__down-side">
+                <button class="button modal__button" type="submit">Отправить</button>
+                <span class="modal__info">* Обязательно к заполнению</span>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    <div class="cottage">
+    <div class="cottage__overlay">
+        <div class="cottage__main">
+            <a href="#" class="cottage__close">
+                <img src="img/close.svg" alt="close">
+            </a>
+            <h2 class="cottage__title">Размещение</h2>
+            <div class="cottage__container">
+            <img class="cottage__foto" src="img/domik1.jpg" alt="cottage">
+            <img class="cottage__foto" src="img/domik2.jpg" alt="cottage">
+            <img class="cottage__foto" src="img/domik3.jpg" alt="cottage">
+            <img class="cottage__foto" src="img/domik4.jpg" alt="cottage">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="sauna">
+    <div class="sauna__overlay">
+        <div class="sauna__main">
+            <a href="#" class="sauna__close">
+                <img src="img/close.svg" alt="close">
+            </a>
+            <h2 class="sauna__title">Банька</h2>
+            <div class="sauna__container">
+            <img class="sauna__foto" src="img/sauna0.jpg" alt="sauns">
+            <img class="sauna__foto" src="img/sauna.jpg" alt="sauna">
+            <img class="sauna__foto" src="img/sauna1.jpg" alt="sauna">
+            <img class="sauna__foto" src="img/sauna2.jpg" alt="sauna">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="camp">
+    <div class="camp__overlay">
+        <div class="camp__main">
+            <a href="#" class="camp__close">
+                <img src="img/close.svg" alt="close">
+            </a>
+            <h2 class="camp__title">Острова</h2>
+            <div class="camp__container">
+            <img class="camp__foto" src="img/ostrova.jpg" alt="camp">
+            <img class="camp__foto" src="img/ozero.jpg" alt="camp">
+            <img class="camp__foto" src="img/ostrova3.jpg" alt="camp">
+            <img class="camp__foto" src="img/ostrova4.jpg" alt="camp">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--Get a scripts-->
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/swiper-bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
